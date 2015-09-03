@@ -82,6 +82,23 @@ def test_json(data):
     import json
     try:
         json.loads(data)
-        print "valid JSON"
+        return "valid JSON"
     except ValueError:
-        print "not a valid JSON"
+        return "not a valid JSON"
+
+
+def runClass():
+    container = getFruits()
+    container.get_names()
+    container.get_product_price()
+    container.get_urls_for_each_page()
+    data = container.wrap()
+
+    response = test_json(data)
+
+    print response
+    print data
+
+
+if __name__ == '__main__':
+    runClass()
