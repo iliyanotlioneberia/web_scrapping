@@ -1,4 +1,4 @@
-To whom is interested in scrapping :) 
+To whom is interested in scrapping
 You are going to install the following libraries:
   1. lxml
   2. requests
